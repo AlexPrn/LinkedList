@@ -3,15 +3,21 @@
 //
 
 #include "Data.h"
+#include "Node.h"
+#include <stdlib.h>
 
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
 
+typedef struct LinkedList{
+  Node* head;
+  Node* tail;
+} LinkedList;
 
-typedef struct Node{
-  Data data;
-  struct Node* next;
-} Node;
+//Node* createNode(){
+//
+//}
+
 
 
 #endif //LINKEDLIST_H

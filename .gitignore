@@ -441,4 +441,5 @@ Status\ Report.txt
 .precomp
 lib/.precomp
 
-
+!*.h
+!Node.h
