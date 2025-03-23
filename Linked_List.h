@@ -14,10 +14,9 @@ typedef struct LinkedList{
   Node* tail;
 } LinkedList;
 
-//Node* createNode(){
-//
-//}
 
+LinkedList* init_linked_list();
+void free_linked_list(LinkedList*);
 
 
 #endif //LINKEDLIST_H

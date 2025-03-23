@@ -443,3 +443,4 @@ lib/.precomp
 
 !*.h
 !Node.h
+!*.c

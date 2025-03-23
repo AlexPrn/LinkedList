@@ -3,4 +3,4 @@ project(LinkedList C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(LinkedList main.c Data.c LinkedList.c)
+add_executable(LinkedList main.c Data.c LinkedList.c ErrorHandler.c)
