@@ -100,7 +100,7 @@ void add_at_index(LinkedList *linked_list, Node* node ,int index) {
     Node *prev = get_node_at_index(linked_list, index - 1);
 
     if (prev == NULL) {
-        handle_out_of_bounds_error(linked_list, NULL);
+        handle_out_of_bounds_error(linked_list, node);
         return;
     }
 
@@ -116,7 +116,7 @@ void add_at_index(LinkedList *linked_list, Node* node ,int index) {
 void delete_at_head(LinkedList *linked_list) {
 
     if (is_empty(linked_list)) {
-        printf("List is already empty. Nothing to delete.\n");
+        handle_null_object_error("Linked List");
         return;
     }
 
@@ -133,7 +133,7 @@ void delete_at_head(LinkedList *linked_list) {
 
 void delete_at_tail(LinkedList *linked_list) {
     if (is_empty(linked_list)) {
-        printf("List is already empty. Nothing to delete.\n");
+        handle_null_object_error("Linked List");;
         return;
     }
 
@@ -164,7 +164,7 @@ void delete_at_index(LinkedList *linked_list, int index) {
     }
 
     if (is_empty(linked_list)) {
-        printf("List is already empty. Nothing to delete.\n");
+        handle_null_object_error("Linked List");
         return;
     }
 

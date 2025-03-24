@@ -14,3 +14,16 @@ Node *get_new_node(){
     return new_node;
 }
 
+int is_not_null(Node *node) {
+    return node != NULL;
+}
+
+void attach_data_to_node(Node *node, Data *data) {
+    if(is_not_null(node)){
+        node->data = data;
+    }
+    else {
+        handle_null_object_error("Node");
+    }
+}
+

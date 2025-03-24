@@ -10,7 +10,7 @@ void handle_memory_allocation_failure(const char* type){
     exit(EXIT_FAILURE);
 }
 
-void handle_out_of_bounds_error(LinkedList *linked_list, Data *data) {
+void handle_out_of_bounds_error(LinkedList *linked_list, Node *node) {
     int choice;
 
     while (1) {
@@ -31,16 +31,20 @@ void handle_out_of_bounds_error(LinkedList *linked_list, Data *data) {
                 printf("Operation ignored.\n");
             return;
             case 2:
-                add_at_head(linked_list, data);
+                add_at_head(linked_list, node);
             printf("Inserted at head.\n");
             return;
             case 3:
-                add_at_tail(linked_list, data);
+                add_at_tail(linked_list, node);
             printf("Inserted at tail.\n");
             return;
             default:
                 printf("Invalid choice. Please enter a number between 1 and 3.\n"); //Insecure, will clear it later
         }
     }
+}
+
+void handle_null_object_error(const char* type) {
+    printf("Cannot operate over NULL %s\n", type);
 }
 

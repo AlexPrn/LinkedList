@@ -16,5 +16,9 @@ typedef struct Node{
 
 Node *get_new_node();
 
+int is_not_null(Node *node);
+
+void attach_data_to_node(Node *node, Data *data);
+
 #endif //NODE_H
 
