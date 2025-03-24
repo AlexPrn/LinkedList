@@ -1,0 +1,8 @@
+# ninja log v6
+2	62	1742728886832544367	CMakeFiles/LinkedList.dir/src/Data.c.o	259f778fdcfa3798
+1	72	1742728886832544367	CMakeFiles/LinkedList.dir/src/main.c.o	964605f542166e3f
+4	73	1742728886832544367	CMakeFiles/LinkedList.dir/src/ErrorHandler.c.o	46d29f32b4833fb3
+2	76	1742728886832544367	CMakeFiles/LinkedList.dir/src/LinkedList.c.o	d6f8bb13f7b17f52
+2	86	1742803528006242934	CMakeFiles/LinkedList.dir/src/LinkedList.c.o	d6f8bb13f7b17f52
+2	87	1742803528006242934	CMakeFiles/LinkedList.dir/src/Node.c.o	dfb9ce09ba55e008
+87	135	1742803528090243759	LinkedList	466d275c2c7fe2c7

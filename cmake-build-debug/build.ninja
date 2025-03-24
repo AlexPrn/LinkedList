@@ -49,29 +49,40 @@ cmake_ninja_workdir = /home/o_partizanos/CLionProjects/LinkedList/cmake-build-de
 
 build cmake_object_order_depends_target_LinkedList: phony || .
 
-build CMakeFiles/LinkedList.dir/main.c.o: C_COMPILER__LinkedList_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/main.c || cmake_object_order_depends_target_LinkedList
-  DEP_FILE = CMakeFiles/LinkedList.dir/main.c.o.d
+build CMakeFiles/LinkedList.dir/src/main.c.o: C_COMPILER__LinkedList_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/src/main.c || cmake_object_order_depends_target_LinkedList
+  DEP_FILE = CMakeFiles/LinkedList.dir/src/main.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/home/o_partizanos/CLionProjects/LinkedList/include
   OBJECT_DIR = CMakeFiles/LinkedList.dir
-  OBJECT_FILE_DIR = CMakeFiles/LinkedList.dir
+  OBJECT_FILE_DIR = CMakeFiles/LinkedList.dir/src
 
-build CMakeFiles/LinkedList.dir/Data.c.o: C_COMPILER__LinkedList_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/Data.c || cmake_object_order_depends_target_LinkedList
-  DEP_FILE = CMakeFiles/LinkedList.dir/Data.c.o.d
+build CMakeFiles/LinkedList.dir/src/Data.c.o: C_COMPILER__LinkedList_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/src/Data.c || cmake_object_order_depends_target_LinkedList
+  DEP_FILE = CMakeFiles/LinkedList.dir/src/Data.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/home/o_partizanos/CLionProjects/LinkedList/include
   OBJECT_DIR = CMakeFiles/LinkedList.dir
-  OBJECT_FILE_DIR = CMakeFiles/LinkedList.dir
+  OBJECT_FILE_DIR = CMakeFiles/LinkedList.dir/src
 
-build CMakeFiles/LinkedList.dir/LinkedList.c.o: C_COMPILER__LinkedList_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/LinkedList.c || cmake_object_order_depends_target_LinkedList
-  DEP_FILE = CMakeFiles/LinkedList.dir/LinkedList.c.o.d
+build CMakeFiles/LinkedList.dir/src/LinkedList.c.o: C_COMPILER__LinkedList_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/src/LinkedList.c || cmake_object_order_depends_target_LinkedList
+  DEP_FILE = CMakeFiles/LinkedList.dir/src/LinkedList.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/home/o_partizanos/CLionProjects/LinkedList/include
   OBJECT_DIR = CMakeFiles/LinkedList.dir
-  OBJECT_FILE_DIR = CMakeFiles/LinkedList.dir
+  OBJECT_FILE_DIR = CMakeFiles/LinkedList.dir/src
 
-build CMakeFiles/LinkedList.dir/ErrorHandler.c.o: C_COMPILER__LinkedList_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/ErrorHandler.c || cmake_object_order_depends_target_LinkedList
-  DEP_FILE = CMakeFiles/LinkedList.dir/ErrorHandler.c.o.d
+build CMakeFiles/LinkedList.dir/src/ErrorHandler.c.o: C_COMPILER__LinkedList_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/src/ErrorHandler.c || cmake_object_order_depends_target_LinkedList
+  DEP_FILE = CMakeFiles/LinkedList.dir/src/ErrorHandler.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/home/o_partizanos/CLionProjects/LinkedList/include
   OBJECT_DIR = CMakeFiles/LinkedList.dir
-  OBJECT_FILE_DIR = CMakeFiles/LinkedList.dir
+  OBJECT_FILE_DIR = CMakeFiles/LinkedList.dir/src
+
+build CMakeFiles/LinkedList.dir/src/Node.c.o: C_COMPILER__LinkedList_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/src/Node.c || cmake_object_order_depends_target_LinkedList
+  DEP_FILE = CMakeFiles/LinkedList.dir/src/Node.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/home/o_partizanos/CLionProjects/LinkedList/include
+  OBJECT_DIR = CMakeFiles/LinkedList.dir
+  OBJECT_FILE_DIR = CMakeFiles/LinkedList.dir/src
 
 
 # =============================================================================
@@ -81,7 +92,7 @@ build CMakeFiles/LinkedList.dir/ErrorHandler.c.o: C_COMPILER__LinkedList_unscann
 #############################################
 # Link the executable LinkedList
 
-build LinkedList: C_EXECUTABLE_LINKER__LinkedList_Debug CMakeFiles/LinkedList.dir/main.c.o CMakeFiles/LinkedList.dir/Data.c.o CMakeFiles/LinkedList.dir/LinkedList.c.o CMakeFiles/LinkedList.dir/ErrorHandler.c.o
+build LinkedList: C_EXECUTABLE_LINKER__LinkedList_Debug CMakeFiles/LinkedList.dir/src/main.c.o CMakeFiles/LinkedList.dir/src/Data.c.o CMakeFiles/LinkedList.dir/src/LinkedList.c.o CMakeFiles/LinkedList.dir/src/ErrorHandler.c.o CMakeFiles/LinkedList.dir/src/Node.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/LinkedList.dir
   POST_BUILD = :

@@ -3,4 +3,12 @@ project(LinkedList C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(LinkedList main.c Data.c LinkedList.c ErrorHandler.c)
+include_directories(include)
+
+add_executable(LinkedList
+        src/main.c
+        src/Data.c
+        src/LinkedList.c
+        src/ErrorHandler.c
+        src/Node.c
+)

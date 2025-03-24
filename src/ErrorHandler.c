@@ -1,0 +1,46 @@
+//
+// Created by o_partizanos on 23/3/2025.
+//
+
+#include "ErrorHandler.h"
+
+void handle_memory_allocation_failure(const char* type){
+
+    fprintf(stderr, "Memory allocation failed for %s\n", type);
+    exit(EXIT_FAILURE);
+}
+
+void handle_out_of_bounds_error(LinkedList *linked_list, Data *data) {
+    int choice;
+
+    while (1) {
+        printf("Index out of bounds. Choose an action:\n");
+        printf("1. Ignore and do nothing.\n");
+        printf("2. Insert at head.\n");
+        printf("3. Insert at tail.\n");
+        printf("Enter your choice: ");
+
+        if (scanf("%d", &choice) != 1) {
+            while (getchar() != '\n'); // Clear invalid input
+            printf("Invalid input. Please enter a number between 1 and 3.\n");
+            continue;
+        }
+
+        switch (choice) {
+            case 1:
+                printf("Operation ignored.\n");
+            return;
+            case 2:
+                add_at_head(linked_list, data);
+            printf("Inserted at head.\n");
+            return;
+            case 3:
+                add_at_tail(linked_list, data);
+            printf("Inserted at tail.\n");
+            return;
+            default:
+                printf("Invalid choice. Please enter a number between 1 and 3.\n"); //Insecure, will clear it later
+        }
+    }
+}
+
