@@ -2,10 +2,10 @@
 // Created by o_partizanos on 21/3/2025.
 //
 
-
-#include "Linked_List.h"
-#include "ErrorHandler.h"
-#include "Node.h"
+#include <stdio.h>
+#include "../include/Data.h"
+#include "../include/ErrorHandler.h"
+#include "../include/LinkedList.h"
 
 LinkedList* init_linked_list() {
     LinkedList* new_linked_list = malloc(sizeof(LinkedList));

@@ -2,7 +2,11 @@
 // Created by o_partizanos on 23/3/2025.
 //
 
-#include "ErrorHandler.h"
+#include <stdio.h>
+#include "../include/Data.h"
+#include "../include/ErrorHandler.h"
+#include "../include/LinkedList.h"
+#include "../include/ErrorHandler.h"
 
 void handle_memory_allocation_failure(const char* type){
 

@@ -2,10 +2,8 @@
 // Created by o_partizanos on 23/3/2025.
 //
 
-#include <stdlib.h>
-#include <stdio.h>
-#include "Linked_List.h"
-#include "Data.h"
+#include "../include/Data.h"
+#include "../include/LinkedList.h"
 #define EXIT_FAILURE 1
 
 #ifndef ERRORHANDLER_H

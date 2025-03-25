@@ -2,8 +2,8 @@
 // Created by o_partizanos on 21/3/2025.
 //
 
-#include "Data.h"
-#include "ErrorHandler.h"
+#include "../include/Data.h"
+#include "../include/ErrorHandler.h"
 
 #ifndef NODE_H
 #define NODE_H

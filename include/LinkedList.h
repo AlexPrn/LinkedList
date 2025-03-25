@@ -2,8 +2,9 @@
 // Created by o_partizanos on 21/3/2025.
 //
 
-#include "Data.h"
-#include "Node.h"
+#include "../include/Data.h"
+#include "../include/ErrorHandler.h"
+#include "../include/Node.h"
 #include <stdlib.h>
 
 #ifndef LINKEDLIST_H

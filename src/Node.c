@@ -2,7 +2,10 @@
 // Created by o_partizanos on 23/3/2025.
 //
 
-#include "Node.h"
+#include "../include/Data.h"
+#include "../include/ErrorHandler.h"
+#include "../include/LinkedList.h"
+#include "../include/Node.h"
 
 Node *get_new_node(){
     Node *new_node = malloc(sizeof(Node));

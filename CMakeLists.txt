@@ -4,6 +4,7 @@ project(LinkedList C)
 set(CMAKE_C_STANDARD 11)
 
 include_directories(include)
+#include_directories(${PROJECT_SOURCE_DIR}/include)
 
 add_executable(LinkedList
         src/main.c
