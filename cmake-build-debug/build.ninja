@@ -100,6 +100,67 @@ build LinkedList: C_EXECUTABLE_LINKER__LinkedList_Debug CMakeFiles/LinkedList.di
   TARGET_FILE = LinkedList
   TARGET_PDB = LinkedList.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target runTests
+
+
+#############################################
+# Order-only phony target for runTests
+
+build cmake_object_order_depends_target_runTests: phony || .
+
+build CMakeFiles/runTests.dir/test/test_runner.c.o: C_COMPILER__runTests_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/test/test_runner.c || cmake_object_order_depends_target_runTests
+  DEP_FILE = CMakeFiles/runTests.dir/test/test_runner.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/home/o_partizanos/CLionProjects/LinkedList/include
+  OBJECT_DIR = CMakeFiles/runTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/runTests.dir/test
+
+build CMakeFiles/runTests.dir/test/test_node.c.o: C_COMPILER__runTests_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/test/test_node.c || cmake_object_order_depends_target_runTests
+  DEP_FILE = CMakeFiles/runTests.dir/test/test_node.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/home/o_partizanos/CLionProjects/LinkedList/include
+  OBJECT_DIR = CMakeFiles/runTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/runTests.dir/test
+
+build CMakeFiles/runTests.dir/src/Node.c.o: C_COMPILER__runTests_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/src/Node.c || cmake_object_order_depends_target_runTests
+  DEP_FILE = CMakeFiles/runTests.dir/src/Node.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/home/o_partizanos/CLionProjects/LinkedList/include
+  OBJECT_DIR = CMakeFiles/runTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/runTests.dir/src
+
+build CMakeFiles/runTests.dir/src/Data.c.o: C_COMPILER__runTests_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/src/Data.c || cmake_object_order_depends_target_runTests
+  DEP_FILE = CMakeFiles/runTests.dir/src/Data.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/home/o_partizanos/CLionProjects/LinkedList/include
+  OBJECT_DIR = CMakeFiles/runTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/runTests.dir/src
+
+build CMakeFiles/runTests.dir/src/ErrorHandler.c.o: C_COMPILER__runTests_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/src/ErrorHandler.c || cmake_object_order_depends_target_runTests
+  DEP_FILE = CMakeFiles/runTests.dir/src/ErrorHandler.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/home/o_partizanos/CLionProjects/LinkedList/include
+  OBJECT_DIR = CMakeFiles/runTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/runTests.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target runTests
+
+
+#############################################
+# Link the executable runTests
+
+build runTests: C_EXECUTABLE_LINKER__runTests_Debug CMakeFiles/runTests.dir/test/test_runner.c.o CMakeFiles/runTests.dir/test/test_node.c.o CMakeFiles/runTests.dir/src/Node.c.o CMakeFiles/runTests.dir/src/Data.c.o CMakeFiles/runTests.dir/src/ErrorHandler.c.o | /usr/lib/x86_64-linux-gnu/libcunit.so
+  FLAGS = -g
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libcunit.so
+  OBJECT_DIR = CMakeFiles/runTests.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = runTests
+  TARGET_PDB = runTests.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -134,7 +195,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/o_partizanos/CLionProjects/LinkedList/cmake-build-debug
 
-build all: phony LinkedList
+build all: phony LinkedList runTests
 
 # =============================================================================
 # Built-in targets
@@ -143,14 +204,14 @@ build all: phony LinkedList
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/o_partizanos/CLionProjects/LinkedList/CMakeLists.txt /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU-C.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/o_partizanos/CLionProjects/LinkedList/CMakeLists.txt /home/o_partizanos/CLionProjects/LinkedList/cmake/FindCUnit.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU-C.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/o_partizanos/CLionProjects/LinkedList/CMakeLists.txt /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU-C.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
+build /home/o_partizanos/CLionProjects/LinkedList/CMakeLists.txt /home/o_partizanos/CLionProjects/LinkedList/cmake/FindCUnit.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindPackageMessage.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU-C.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/Linux.cmake /snap/clion/332/bin/cmake/linux/x64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
 
 
 #############################################

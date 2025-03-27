@@ -189,6 +189,15 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to a file.
+CUNIT_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+CUNIT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcunit.so
+
+//The directory containing a CMake configuration file for CUnit.
+CUnit_DIR:PATH=CUnit_DIR-NOTFOUND
+
 //Value Computed by CMake
 LinkedList_BINARY_DIR:STATIC=/home/o_partizanos/CLionProjects/LinkedList/cmake-build-debug
 
@@ -328,6 +337,12 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUNIT_INCLUDE_DIR
+CUNIT_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUNIT_LIBRARY
+CUNIT_LIBRARY-ADVANCED:INTERNAL=1
+//Details about finding CUnit
+FIND_PACKAGE_MESSAGE_DETAILS_CUnit:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libcunit.so][v()]
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 
