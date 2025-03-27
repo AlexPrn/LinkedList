@@ -25,3 +25,9 @@ int main() {
     CU_cleanup_registry();
     return 0;
 }
+
+/**
+*pkg-config --modversion cunit outputs 2.1-3
+So we have cunit.
+But, ls /usr/lib | grep cunit produces nothing.. so it is in another dir?
+ * /
