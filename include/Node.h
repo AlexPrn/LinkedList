@@ -3,7 +3,6 @@
 //
 
 #include "../include/Data.h"
-#include "../include/ErrorHandler.h"
 
 #ifndef NODE_H
 #define NODE_H

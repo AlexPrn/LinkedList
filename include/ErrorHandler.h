@@ -2,7 +2,6 @@
 // Created by o_partizanos on 23/3/2025.
 //
 
-#include "../include/Data.h"
 #include "../include/LinkedList.h"
 #define EXIT_FAILURE 1
 
