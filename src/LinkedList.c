@@ -193,3 +193,32 @@ void delete_at_index(LinkedList *linked_list, int index) {
 
 }
 
+void print_linked_list(LinkedList* linked_list) {
+    if (!linked_list || is_empty(linked_list)) {
+        printf("[Empty List]\n");
+        return;
+    }
+
+    Node* current = linked_list->head;
+    int count = 0;
+
+    printf("head -> ");
+
+    while (current) {
+        printf("[%d]", count);
+
+        if (current->next) {
+            printf(" -> ");
+        }
+
+        count++;
+        // MAGIC_NUMBER 10, could be any.
+        if (count % 10 == 0 && current->next) {
+            printf("\n       "); // Indentation for multi-line clarity
+        }
+
+        current = current->next;
+    }
+
+    printf(" <- tail\n");
+}
