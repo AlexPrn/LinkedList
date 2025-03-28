@@ -33,12 +33,12 @@ add_executable(LinkedList
 add_executable(runTests
         test/test_runner.c
         test/test_node.c
+        test/test_linked_list.c
         src/Node.c
         src/Data.c
         src/ErrorHandler.c
         src/LinkedList.c
         # Future test suites
-        # test/test_linkedlist.c
         # test/test_errorhandler.c
 )
 
