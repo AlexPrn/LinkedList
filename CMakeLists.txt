@@ -13,10 +13,14 @@ include_directories(include)
 # Add the cmake directory to CMAKE_MODULE_PATH
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 
+# Manually specify CUnit paths
+set(CUNIT_LIB_DIR "/usr/lib/x86_64-linux-gnu")
+set(CUNIT_INCLUDE_DIR "/usr/include")
+
 # Find and include CUnit
 find_package(CUnit REQUIRED)
 
-# Add main executable
+# Main executable
 add_executable(LinkedList
         src/main.c
         src/Data.c
@@ -25,15 +29,19 @@ add_executable(LinkedList
         src/Node.c
 )
 
-# Add test executable
+# Test executable
 add_executable(runTests
         test/test_runner.c
         test/test_node.c
         src/Node.c
         src/Data.c
         src/ErrorHandler.c
+        src/LinkedList.c
+        # Future test suites
+        # test/test_linkedlist.c
+        # test/test_errorhandler.c
 )
 
-# Link CUnit to test executable
-target_link_libraries(runTests ${CUNIT_LIBRARIES})
-include_directories(${CUNIT_INCLUDE_DIRS})
+# Link CUnit and include necessary directories
+target_include_directories(runTests PRIVATE ${CUNIT_INCLUDE_DIR})
+target_link_libraries(runTests ${CUNIT_LIB_DIR}/libcunit.so)

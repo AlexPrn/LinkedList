@@ -144,6 +144,13 @@ build CMakeFiles/runTests.dir/src/ErrorHandler.c.o: C_COMPILER__runTests_unscann
   OBJECT_DIR = CMakeFiles/runTests.dir
   OBJECT_FILE_DIR = CMakeFiles/runTests.dir/src
 
+build CMakeFiles/runTests.dir/src/LinkedList.c.o: C_COMPILER__runTests_unscanned_Debug /home/o_partizanos/CLionProjects/LinkedList/src/LinkedList.c || cmake_object_order_depends_target_runTests
+  DEP_FILE = CMakeFiles/runTests.dir/src/LinkedList.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/home/o_partizanos/CLionProjects/LinkedList/include
+  OBJECT_DIR = CMakeFiles/runTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/runTests.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target runTests
@@ -152,7 +159,7 @@ build CMakeFiles/runTests.dir/src/ErrorHandler.c.o: C_COMPILER__runTests_unscann
 #############################################
 # Link the executable runTests
 
-build runTests: C_EXECUTABLE_LINKER__runTests_Debug CMakeFiles/runTests.dir/test/test_runner.c.o CMakeFiles/runTests.dir/test/test_node.c.o CMakeFiles/runTests.dir/src/Node.c.o CMakeFiles/runTests.dir/src/Data.c.o CMakeFiles/runTests.dir/src/ErrorHandler.c.o | /usr/lib/x86_64-linux-gnu/libcunit.so
+build runTests: C_EXECUTABLE_LINKER__runTests_Debug CMakeFiles/runTests.dir/test/test_runner.c.o CMakeFiles/runTests.dir/test/test_node.c.o CMakeFiles/runTests.dir/src/Node.c.o CMakeFiles/runTests.dir/src/Data.c.o CMakeFiles/runTests.dir/src/ErrorHandler.c.o CMakeFiles/runTests.dir/src/LinkedList.c.o | /usr/lib/x86_64-linux-gnu/libcunit.so
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libcunit.so
   OBJECT_DIR = CMakeFiles/runTests.dir
