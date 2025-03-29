@@ -10,7 +10,9 @@
 
 void handle_memory_allocation_failure(const char* type);
 
-void handle_out_of_bounds_error(LinkedList *linked_list, Node *node);
+
+void handle_out_of_bounds_error(LinkedList* linked_list, Node* node);
+
 
 void handle_null_object_error(const char* type);
 
