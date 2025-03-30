@@ -7,12 +7,12 @@
 #include "../include/LinkedList.h"
 #include "../include/ErrorHandler.h"
 
-// static int out_of_bounds_handler_called = 0;
-// void handle_out_of_bounds_error(LinkedList* linked_list, Node* node) {
-//   (void) linked_list;
-//   (void) node;
-//   out_of_bounds_handler_called = 1;
-// }
+static int out_of_bounds_handler_called = 0;
+void test_out_of_bounds_handler(LinkedList* linked_list, Node* node) {
+  (void) linked_list;
+  (void) node;
+  out_of_bounds_handler_called = 1;
+}
 
 
 void test_init_linked_list();
@@ -24,7 +24,6 @@ void test_add_at_index_out_of_bounds();    // Error handling test
 void test_delete_at_head();
 void test_delete_at_tail();
 void test_delete_at_index();
-// void test_free_linked_list();
 
 
 void add_linked_list_tests();
@@ -39,8 +38,7 @@ void add_linked_list_tests(){
   CU_add_test(suite, "test_delete_at_head", test_delete_at_head);
   CU_add_test(suite, "test_delete_at_tail", test_delete_at_tail);
   CU_add_test(suite, "test_delete_at_index", test_delete_at_index);
-  // CU_add_test(suite, "test_add_at_index for out_of_bounds handle", test_add_at_index_out_of_bounds);
-  // CU_add_test(suite, "test_free_linked_list", test_free_linked_list);
+  CU_add_test(suite, "test_add_at_index for out_of_bounds handle", test_add_at_index_out_of_bounds);
 }
 
 
@@ -117,19 +115,20 @@ void test_add_at_index() {
   free_linked_list(list);
 }
 
-// void test_add_at_index_out_of_bounds() {
-//   LinkedList* list = init_linked_list();
-//   add_empty_node_at_head(list);
-//   add_empty_node_at_head(list);
-//   Node* node = get_new_node();
-//
-//   out_of_bounds_handler_called = 0; // Reset counter
-//   add_at_index(list, node, 100);
-//
-//   CU_ASSERT_EQUAL(out_of_bounds_handler_called, 1);
-//
-//   free_linked_list(list);
-// }
+void test_add_at_index_out_of_bounds() {
+  LinkedList* list = init_linked_list();
+  add_empty_node_at_head(list);
+  add_empty_node_at_head(list);
+  Node* node = get_new_node();
+
+  set_out_of_bounds_handler(test_out_of_bounds_handler);
+  out_of_bounds_handler_called = 0;
+  add_at_index(list, node, 100);
+
+  CU_ASSERT_EQUAL(out_of_bounds_handler_called, 1);
+
+  free_linked_list(list);
+}
 
 void test_delete_at_head() {
   LinkedList* list = init_linked_list();
