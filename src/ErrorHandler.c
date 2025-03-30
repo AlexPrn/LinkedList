@@ -34,7 +34,7 @@ void handle_out_of_bounds_error(LinkedList *linked_list, Node *node) {
     out_of_bounds_handler(linked_list, node);
 }
 
-void default_handle_out_of_bounds_error(LinkedList *linked_list, Node *node) {
+void default_out_of_bounds_handler(LinkedList *linked_list, Node *node) {
     int choice;
 
     while (1) {
