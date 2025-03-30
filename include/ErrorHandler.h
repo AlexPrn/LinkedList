@@ -10,6 +10,12 @@
 
 void handle_memory_allocation_failure(const char* type);
 
+// Function pointer for handling out-of-bounds errors
+typedef void (*OutOfBoundsHandler)(LinkedList* linked_list, Node* node);
+
+// Expose a setter function to allow overriding the handler
+void set_out_of_bounds_handler(OutOfBoundsHandler handler);
+
 
 void handle_out_of_bounds_error(LinkedList* linked_list, Node* node);
 

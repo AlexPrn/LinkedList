@@ -14,7 +14,27 @@ void handle_memory_allocation_failure(const char* type){
     exit(EXIT_FAILURE);
 }
 
+
+
+// Default handler function
+static void default_out_of_bounds_handler(LinkedList *linked_list, Node *node);
+
+// Function pointer initialized to the default handler
+static OutOfBoundsHandler out_of_bounds_handler = default_out_of_bounds_handler;
+
+// Function to set a custom out-of-bounds handler
+void set_out_of_bounds_handler(OutOfBoundsHandler handler) {
+    if (handler) {
+        out_of_bounds_handler = handler;
+    }
+}
+
+// This function remains unchanged but now delegates to the function pointer
 void handle_out_of_bounds_error(LinkedList *linked_list, Node *node) {
+    out_of_bounds_handler(linked_list, node);
+}
+
+void default_handle_out_of_bounds_error(LinkedList *linked_list, Node *node) {
     int choice;
 
     while (1) {
